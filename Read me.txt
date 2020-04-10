@@ -1,0 +1,30 @@
+
+Title of the Project-Corona Suspect Detection And Alerting System
+
+Description-This is a concept that helps to detect the symptoms of COVID-19.
+It works by detecting the basic symptoms of the virus
+In this project, we will be checking for two symptoms: raised body temperature, and heartbeats(BPM). 
+We are doing this as on initial level for particular person, But our main Aim target is to go for multiple users to use in such areas like stations, Malls, shops etc. 
+
+
+Hardware and Software Requirements-Hardware equipments:
+Sensor lm35 for check fever 
+Heart beat sensor for check BPM
+Controller esp32(devkitmodle)
+Buzzer for alerting
+
+Software uses:
+ThingSpeak cloud
+DevKitModle
+
+
+Process Flow-First, it checks the temperature of the body using a sensor and using the heartbeat sensor it monitors the heartbeat(BPM).
+Both sensors are interface on controller esp32, these input values goes to cloud i.e. ThingSpeak by controller esp32. It stores the data.
+We set the ranges for temperature and heartbeat if the temp ranges goes more than 38degree Celsius and heartbeat less than 60 then buzzer will get started and show the patient has coronavirus symptoms or not.
+And we display these values on monitor for user friendly and easy to see information. As well as we display it on cloud in 3 category to analyse. These all are display with its graphs.
+No of users 
+Temperature value
+Heartbeat value 
+
+Data Flow Diagram-Senors(values)input->Controller(esp32)->Cloud(ThingsSpeak)Output 
+
